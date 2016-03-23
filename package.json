@@ -1,0 +1,16 @@
+{
+  "name": "templogger",
+  "version": "0.0.1",
+  "description": "Logs temperature to graphite",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --harmony ./index.js"
+  },
+  "author": "Sebastian Gilits <sep.gil@gmail.com>",
+  "license": "GPL",
+  "dependencies": {
+    "graphite": "0.0.6",
+    "particle-api-js": "^5.2.5"
+  }
+}
