@@ -4,11 +4,11 @@ services:
     build: .
     depends_on:
       - graphite
+    env_file:
+      - "${SECRETS}"
+
 
   graphite:
     image: sitespeedio/graphite:0.9.14
-    volumes:
-      - "/opt/graphite/passwd:/etc/nginx/.htpasswd"
-      - "/opt/graphite/passwd:/opt/graphite/storage/whisper"
     ports:
       - "8080:80"
