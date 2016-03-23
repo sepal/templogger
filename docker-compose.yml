@@ -6,9 +6,11 @@ services:
       - graphite
     env_file:
       - "${SECRETS}"
+    restart: always
 
 
   graphite:
     image: sitespeedio/graphite:0.9.14
     ports:
       - "8080:80"
+    restart: always
